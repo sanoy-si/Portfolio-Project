@@ -131,8 +131,10 @@
     margin: 5px;
     transition: all 0.3s ease;
   }
+  
+  /* Hero Section */
   .hero {
-    height: 100vh;
+    height: 80vh;
     display: flex;
     align-items: center;
     background-color: var(--light);
@@ -142,6 +144,8 @@
   
   .hero-content {
     max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
   }
   
   .hero h1 {
@@ -155,13 +159,3 @@
     margin-bottom: 30px;
     color: var(--gray);
   }
-  
-  .hero-img {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 45%;
-    max-width: 500px;
-    opacity: 0.9;
-  }
-    
