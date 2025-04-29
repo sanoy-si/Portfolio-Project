@@ -508,4 +508,78 @@
     height: 150px;
     resize: vertical;
   }
-    
+
+  footer {
+    background-color: var(--dark);
+    color: white;
+    padding: 40px 0;
+    text-align: center;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px;
+    gap: 40px;
+  }
+  
+  .social-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s ease;
+  }
+  
+  .social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+    margin-bottom: 8px;
+    transition: all 0.3s ease;
+  }
+  
+  .social-icon i {
+    font-size: 24px;
+    color: white;
+  }
+  
+  .social-name {
+    font-size: 0.9rem;
+    color: var(--light-gray);
+  }
+  
+  .social-link:hover .social-icon {
+    background-color: var(--primary);
+    transform: translateY(-3px);
+  }
+  
+  .social-link:hover .social-name {
+    color: white;
+  }
+  
+  /* Brand-specific hover colors */
+  .social-link:nth-child(1):hover .social-icon {
+    background-color: var(--linkedin);
+  }
+  
+  .social-link:nth-child(2):hover .social-icon {
+    background-color: var(--github);
+  }
+  
+  .social-link:nth-child(3):hover .social-icon {
+    background-color: var(--twitter);
+  }
+  
+  .social-link:nth-child(4):hover .social-icon {
+    background-color: var(--telegram);
+  }
+  
+  .copyright {
+    color: var(--light-gray);
+    font-size: 0.9rem;
+  }
+  
