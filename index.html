@@ -8,6 +8,9 @@
     <!-- Add Simple Icons CDN -->
     <script src="https://cdn.jsdelivr.net/npm/simple-icons-font@v9/font/simple-icons.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/simple-icons-font@v9/font/simple-icons.min.css" rel="stylesheet" type="text/css">
+    <!-- Add AOS (Animate On Scroll) library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <body>
     <!-- Header -->
@@ -51,19 +54,78 @@
 
     <!-- Hero Section -->
     <section class="hero" id="home">
+        <div class="hero-background">
+            <div class="shape shape1"></div>
+            <div class="shape shape2"></div>
+            <div class="shape shape3"></div>
+            <div class="shape shape4"></div>
+        </div>
         <div class="container">
             <div class="hero-content">
-                <h1>Hi, I'm <span class="highlight">Yonas Sintayehu</span></h1>
-                <p>A passionate web developer creating beautiful and functional websites.</p>
-                <a href="#contact" class="btn">Get In Touch</a>
+                <div class="hero-text" data-aos="fade-right" data-aos-duration="1000">
+                    <div class="hero-greeting">Hello, I'm</div>
+                    <h1><span class="highlight">Yonas Sintayehu</span></h1>
+                    <div class="hero-subtitle">
+                        <span class="typed-text"></span><span class="cursor">&nbsp;</span>
+                    </div>
+                    <p>A passionate web developer creating beautiful and functional websites.</p>
+                    <div class="hero-cta">
+                        <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                        <a href="#projects" class="btn btn-secondary">View My Work</a>
+                    </div>
+                    <div class="hero-social">
+                        <a href="#" class="social-icon-link" aria-label="LinkedIn">
+                            <i class="si si-linkedin"></i>
+                        </a>
+                        <a href="https://github.com/sanoy-si" class="social-icon-link" aria-label="GitHub">
+                            <i class="si si-github"></i>
+                        </a>
+                        <a href="https://x.com/SanoySi?t=Omo6mk8JEBGNfslRoPPwiw&s=09" class="social-icon-link" aria-label="X">
+                            <i class="si si-x"></i>
+                        </a>
+                        <a href="https://t.me/Jonas_sintayehu" class="social-icon-link" aria-label="Telegram">
+                            <i class="si si-telegram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image" data-aos="fade-left" data-aos-duration="1000">
+                    <div class="profile-container">
+                        <div class="profile-circle">
+                            <img src="download.jpeg" alt="Yonas Sintayehu" class="profile-img">
+                        </div>
+                        <div class="experience-badge">
+                            <span>5+ Years</span>
+                            <span>Experience</span>
+                        </div>
+                        <div class="tech-badge tech-badge-1">
+                            <i class="si si-python"></i>
+                        </div>
+                        <div class="tech-badge tech-badge-2">
+                            <i class="si si-react"></i>
+                        </div>
+                        <div class="tech-badge tech-badge-3">
+                            <i class="si si-go"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="scroll-down">
+                <a href="#about">
+                    <div class="mouse">
+                        <div class="wheel"></div>
+                    </div>
+                    <div>
+                        <span class="scroll-text">Scroll Down</span>
+                    </div>
+                </a>
             </div>
         </div>
     </section>
     <section class="about" id="about">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
+            <h2 class="section-title" data-aos="fade-up">About Me</h2>
             <div class="about-content">
-                <div class="about-text">
+                <div class="about-text" data-aos="fade-up" data-aos-delay="100">
                     <h3>Web Developer & Designer</h3>
                     <p>I'm a passionate web developer with 5 years of experience creating modern, efficient and responsive websites. I specialize in back-end development and have a strong foundation in front-end technologies as well.</p>
                     <p>I love solving complex problems and turning ideas into reality through code.</p>
@@ -74,31 +136,31 @@
     </section>
     <section class="skills" id="skills">
         <div class="container">
-            <h2 class="section-title">My Skills</h2>
+            <h2 class="section-title" data-aos="fade-up">My Skills</h2>
             
             <!-- Programming Languages -->
-            <div class="skills-category">
+            <div class="skills-category" data-aos="fade-up" data-aos-delay="100">
                 <h3 class="category-title">Programming Languages</h3>
                 <div class="skills-container">
-                    <div class="skill-card">
+                    <div class="skill-card" data-aos="zoom-in" data-aos-delay="150">
                         <div class="skill-icon">
                             <i class="si si-python"></i>
                         </div>
                         <h3>Python</h3>
                     </div>
-                    <div class="skill-card">
+                    <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
                         <div class="skill-icon">
                             <i class="si si-go"></i>
                         </div>
                         <h3>Go</h3>
                     </div>
-                    <div class="skill-card">
+                    <div class="skill-card" data-aos="zoom-in" data-aos-delay="250">
                         <div class="skill-icon">
                             <i class="si si-javascript"></i>
                         </div>
                         <h3>JavaScript</h3>
                     </div>
-                    <div class="skill-card">
+                    <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">
                         <div class="skill-icon">
                             <i class="si si-cplusplus"></i>
                         </div>
@@ -108,28 +170,28 @@
             </div>
             
             <!-- Frameworks & Libraries -->
-            <div class="skills-category">
+            <div class="skills-category" data-aos="fade-up" data-aos-delay="150">
                 <h3 class="category-title">Frameworks & Libraries</h3>
                 <div class="skills-container">
-                    <div class="skill-card">
+                    <div class="skill-card" data-aos="zoom-in" data-aos-delay="150">
                         <div class="skill-icon">
                             <i class="si si-react"></i>
                         </div>
                         <h3>React</h3>
                     </div>
-                    <div class="skill-card">
+                    <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
                         <div class="skill-icon">
                             <i class="si si-django"></i>
                         </div>
                         <h3>Django</h3>
                     </div>
-                    <div class="skill-card">
+                    <div class="skill-card" data-aos="zoom-in" data-aos-delay="250">
                         <div class="skill-icon">
                             <i class="si si-go"></i>
                         </div>
                         <h3>Go-Gin</h3>
                     </div>
-                    <div class="skill-card">
+                    <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">
                         <div class="skill-icon">
                             <i class="si si-bootstrap"></i>
                         </div>
@@ -139,28 +201,28 @@
             </div>
             
             <!-- Tools & Technologies -->
-            <div class="skills-category">
+            <div class="skills-category" data-aos="fade-up" data-aos-delay="200">
                 <h3 class="category-title">Tools & Technologies</h3>
                 <div class="skills-container">
-                    <div class="skill-card">
+                    <div class="skill-card" data-aos="zoom-in" data-aos-delay="150">
                         <div class="skill-icon">
                             <i class="si si-git"></i>
                         </div>
                         <h3>Git & GitHub</h3>
                     </div>
-                    <div class="skill-card">
+                    <div class="skill-card" data-aos="zoom-in" data-aos-delay="200">
                         <div class="skill-icon">
                             <i class="si si-webpack"></i>
                         </div>
                         <h3>Webpack</h3>
                     </div>
-                    <div class="skill-card">
+                    <div class="skill-card" data-aos="zoom-in" data-aos-delay="250">
                         <div class="skill-icon">
                             <i class="si si-docker"></i>
                         </div>
                         <h3>Docker</h3>
                     </div>
-                    <div class="skill-card">
+                    <div class="skill-card" data-aos="zoom-in" data-aos-delay="300">
                         <div class="skill-icon">
                             <i class="si si-githubactions"></i>
                         </div>
@@ -173,9 +235,9 @@
     </section>
     <section class="projects" id="projects">
         <div class="container">
-            <h2 class="section-title">My Projects</h2>
+            <h2 class="section-title" data-aos="fade-up">My Projects</h2>
             <div class="projects-grid">
-                <div class="project-card">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
                     <div class="project-info">
                         <h3>Furniture Store</h3>
                         <p>A RESTful API for furniture manufacturers to showcase their products, featuring product filtering and cart management functionality.</p>
@@ -187,7 +249,7 @@
                         <a href="https://sanoysi2.pythonanywhere.com/" class="btn">View Project</a>
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
                     <div class="project-info">
                         <h3>Molla Shop</h3>
                         <p>A fully responsive e-commerce website for purchasing traditional Ethiopian Habesha clothing with ease.</p>
@@ -201,7 +263,7 @@
                         <a href="https://sanoysi.pythonanywhere.com/" class="btn">View Project</a>
                     </div>
                 </div>
-                <div class="project-card">
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
                     <div class="project-info">
                         <h3>Task Management App</h3>
                         <p>A command-line Tic-Tac-Toe game for two players, featuring turn-based gameplay and automatic win or draw detection.</p>
@@ -217,9 +279,9 @@
     <!-- Contact Section -->
     <section class="contact" id="contact">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
+            <h2 class="section-title" data-aos="fade-up">Get In Touch</h2>
             <div class="contact-container">
-                <div class="contact-info">
+                <div class="contact-info" data-aos="fade-right" data-aos-delay="100">
                     <h3>Let's Talk About Your Project</h3>
                     <p>Feel free to reach out if you're looking for a developer, have a question, or just want to connect.</p>
                     <div class="contact-details">
@@ -237,7 +299,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="contact-form">
+                <div class="contact-form" data-aos="fade-left" data-aos-delay="100">
                     <form id="contactForm" action="https://formspree.io/f/xblodbkd" method="POST">
                         <div class="form-group">
                             <label for="name">Name</label>
