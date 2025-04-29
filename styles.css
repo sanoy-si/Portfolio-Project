@@ -33,6 +33,7 @@
     --shape-2: rgba(16, 185, 129, 0.1);
     --shape-3: rgba(79, 70, 229, 0.05);
     --shape-4: rgba(16, 185, 129, 0.05);
+    --footer-bg: var(--dark);
   }
   
   [data-theme="dark"] {
@@ -42,7 +43,7 @@
     --secondary: #34d399;
     --secondary-light: #6ee7b7;
     --secondary-dark: #10b981;
-    --dark: #f9fafb;
+    --dark: #1e293b;
     --light: #111827;
     --gray: #9ca3af;
     --light-gray: #374151;
@@ -53,7 +54,7 @@
     --header-bg: rgba(31, 41, 55, 0.95);
     --header-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
     --linkedin: #0077b5;
-    --github: #f0f6fc;
+    --github: #333333;
     --twitter: #1da1f2;
     --telegram: #0088cc;
     --gradient-1: linear-gradient(135deg, rgba(129, 140, 248, 0.1) 0%, rgba(52, 211, 153, 0.1) 100%);
@@ -62,6 +63,7 @@
     --shape-2: rgba(52, 211, 153, 0.1);
     --shape-3: rgba(129, 140, 248, 0.05);
     --shape-4: rgba(52, 211, 153, 0.05);
+    --footer-bg: #1e293b;
   }
   
   body {
@@ -639,6 +641,7 @@
   .skill-icon i {
     font-size: 28px;
     color: var(--primary);
+    fill: currentColor;
   }
   
   /* Simple Icons specific styling */
@@ -901,7 +904,7 @@
   }
   
   footer {
-    background-color: var(--dark);
+    background-color: var(--footer-bg);
     color: white;
     padding: 40px 0;
     text-align: center;
@@ -936,6 +939,12 @@
   .social-icon i {
     font-size: 24px;
     color: white;
+    fill: currentColor;
+  }
+  
+  [data-theme="dark"] .social-icon i {
+    color: #60a5fa; /* Light blue color */
+    fill: currentColor;
   }
   
   .social-name {
@@ -973,3 +982,4 @@
     color: var(--light-gray);
     font-size: 0.9rem;
   }
+  
