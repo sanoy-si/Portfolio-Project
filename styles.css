@@ -443,4 +443,69 @@
     font-size: 0.8rem;
     color: var(--gray);
   }
+  .contact {
+    background-color: var(--light);
+  }
   
+  .contact-container {
+    display: flex;
+    gap: 50px;
+  }
+  
+  .contact-info {
+    flex: 1;
+  }
+  
+  .contact-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .contact-info p {
+    margin-bottom: 30px;
+  }
+  
+  .contact-details {
+    margin-bottom: 30px;
+  }
+  
+  .contact-details div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .contact-details i {
+    margin-right: 15px;
+    color: var(--primary);
+  }
+  
+  .contact-form {
+    flex: 1;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid var(--light-gray);
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 1rem;
+  }
+  
+  .form-group textarea {
+    height: 150px;
+    resize: vertical;
+  }
+    
