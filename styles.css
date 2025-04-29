@@ -392,3 +392,55 @@
       grid-template-columns: repeat(4, 1fr);
     }
   }  
+  .projects {
+    background-color: white;
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+  }
+  
+  .project-card {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-info {
+    padding: 20px;
+  }
+  
+  .project-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .project-info p {
+    color: var(--gray);
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+  }
+  
+  .project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 15px;
+  }
+  
+  .project-tag {
+    padding: 4px 10px;
+    background-color: var(--light-gray);
+    border-radius: 20px;
+    font-size: 0.8rem;
+    color: var(--gray);
+  }
+  
