@@ -7,7 +7,7 @@ Welcome to my personal portfolio website! This site showcases my projects, skill
 - Clean and responsive design
 - Project highlights with links
 - About Me and Contact sections
-- Hosted on [GitHub Pages](https://yourusername.github.io/your-repo-name)
+- Hosted on [GitHub Pages](https://sanoy-si.github.io/Portfolio-Project)
 
 ## 🛠️ Technologies Used
 
